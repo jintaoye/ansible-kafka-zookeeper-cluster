@@ -1,0 +1,13 @@
+[Unit]
+Description=Zookeeper
+Before=
+After=network.target
+
+[Service]
+Type=forking
+User=root
+ExecStart={{ zk_dir }}/bin/zkServer.sh start {{ zk_dir }}/conf/zoo.cfg
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

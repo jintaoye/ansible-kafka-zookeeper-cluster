@@ -1,0 +1,20 @@
+- hosts: all
+  remote_user: centos
+  become: yes
+  become_method: sudo
+  roles:
+    - java
+
+- hosts: tag_application_zookeeper
+  remote_user: centos
+  become: yes
+  become_method: sudo
+  roles:
+    - zookeeper
+
+- hosts: tag_application_kafka
+  remote_user: centos
+  become: yes
+  become_method: sudo
+  roles:
+    - kafka

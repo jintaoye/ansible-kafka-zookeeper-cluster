@@ -1,0 +1,5 @@
+- name: start kafka
+  systemd: name=kafka state=started enabled=yes daemon_reload=yes
+
+- name: restart kafka
+  systemd: name=kafka state=restarted enabled=yes daemon_reload=yes

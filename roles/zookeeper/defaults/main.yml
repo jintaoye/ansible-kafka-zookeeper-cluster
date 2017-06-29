@@ -1,0 +1,6 @@
+zk:
+  version: 3.4.10
+  mirror: http://ftp.meisei-u.ac.jp/mirror/apache/dist
+  data_dir: /mnt/zookeeper
+  install_dir: "/etc"
+  tick_time: 2000

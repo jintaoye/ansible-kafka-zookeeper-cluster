@@ -1,0 +1,12 @@
+[Unit]
+Description=Kafka
+Before=
+After=network.target
+
+[Service]
+User=root
+ExecStart={{ kafka_dir }}/bin/kafka-server-start.sh {{ kafka_dir }}/config/real-server.properties
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

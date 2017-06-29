@@ -1,0 +1,8 @@
+[zk]
+myvm1
+myvm2
+
+[kafka]
+myvm1
+myvm2
+myvm3

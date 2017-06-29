@@ -1,0 +1,8 @@
+kafka:
+  version: 0.10.2.1
+  scala_version: 2.11
+  mirror: http://ftp.meisei-u.ac.jp/mirror/apache/dist
+  data_dir: /mnt/kafka
+  install_dir: "/etc"
+  log_dir: /var/log/kafka
+  log_file: kafka.log
